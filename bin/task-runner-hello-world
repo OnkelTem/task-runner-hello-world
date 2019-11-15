@@ -5,7 +5,12 @@ $file = __DIR__;
 if (file_exists($file = __DIR__ . "/../vendor/autoload.php")) {
   /** @noinspection PhpIncludeInspection */
   require $file;
-} else {
+}
+else if (file_exists($file = __DIR__ . "/../../../autoload.php")) {
+  /** @noinspection PhpIncludeInspection */
+  require $file;
+}
+else {
   die("Can't find autoload.php");
 }
 
