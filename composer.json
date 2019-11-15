@@ -1,0 +1,36 @@
+{
+  "name": "onkeltem/task-runner-hello-world",
+  "description": "Example 'Hello World' app using Task Runner",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Artiom Neganov",
+      "email": "aneganov@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:OnkelTem/task-runner.git"
+    }
+  ],
+  "type": "package",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "onkeltem/task-runner": "dev-master"
+  },
+  "bin": [
+    "bin/task-runner-hello-world"
+  ],
+  "autoload": {
+    "psr-4": {
+      "TaskRunnerHelloWorld\\": "src/"
+    },
+    "files": [
+      "src/TaskHello.php",
+      "src/TaskBye.php"
+    ]
+  }
+}
