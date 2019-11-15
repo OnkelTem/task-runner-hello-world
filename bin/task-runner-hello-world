@@ -2,10 +2,12 @@
 <?php
 
 $file = __DIR__;
+// Location: bin/
 if (file_exists($file = __DIR__ . "/../vendor/autoload.php")) {
   /** @noinspection PhpIncludeInspection */
   require $file;
 }
+// Location: vendor/bin/
 else if (file_exists($file = __DIR__ . "/../../../autoload.php")) {
   /** @noinspection PhpIncludeInspection */
   require $file;
